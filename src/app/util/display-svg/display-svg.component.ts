@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class DisplaySvgComponent implements OnInit {
   link: string = '';
   @Input() name!: string;
+  @Input() inheritWithAndHeight = false;
 
   constructor() { }
 
