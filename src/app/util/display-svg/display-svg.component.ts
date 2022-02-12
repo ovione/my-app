@@ -8,9 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class DisplaySvgComponent implements OnInit {
   link: string = '';
   @Input() name!: string;
-  @Input() inheritWithAndHeight = false;
-
-  constructor() { }
+  @Input() inheritWidthAndHeight = true;
 
   ngOnInit(): void {
     this.link = `/assets/${this.name}.svg#${this.name}`;
